@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina do Derly - Oficina Mecânica - Itaperuna, RJ (22) 3822-0397</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagens/oficina-mecanica-png-2.png" alt="">
+    </div>
+    <div class="menu-icone" onclick="document.getElementById('menu-nav').classList.toggle('exibir')"> </div>
+    <nav class="" id="menu-nav">
+      <ul>
+        <li> <a href="/index.html">HOME</a> </li>
+        <li> <a href="/#quem_somos">SOBRE</a> </li>
+        <li> <a href="/#servicos">SERVIÇOS</a> </li>
+        <li> <a href="/contato.html">CONTATO</a> </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="apresentacao">
+    <h2>Nossos serviços</h2>
+
+    <div class="servicos">
+      <div>
+        <a href="/contato.html">
+          <img src="imagens/0101.webp" alt="">
+          <h3>MECÂNICA</h3>
+          <p>Realizamos serviços de mecânica geral, suspensão, motor, câmbio e freio.</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="/contato.html">
+          <img src="imagens/0202.webp" alt="">
+          <h3>INJEÇÃO ELETRÔNICA</h3>
+          <p>Ajuste e calibração dos bicos (convencionais e de alta pressão) e diagnóstico geral.</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="/contato.html">
+          <img src="imagens/0303.webp" alt="">
+          <h3>REVISÃO PREVENTIVA</h3>
+          <p>Troca de itens de revisão (óleo e filtros).</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="/contato.html">
+          <img src="imagens/0404.webp" alt="">
+          <h3>SCANNER AUTOMOTIVO</h3>
+          <p>Diagnóstico eletrônico com equipamentos de última geração e de extrema precisão.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="quem_somos" id="quem_somos">
+    <div class="conteudo">
+      <div class="texto">
+        <h2>QUEM SOMOS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="fundo">
+        <div class="w3-content w3-display-container" >
+          <img class="mySlides" src="imagens/background/001.jpg" >
+          <img class="mySlides" src="imagens/background/003.jpg" >
+          <img class="mySlides" src="imagens/background/004.jpg" >
+          <img class="mySlides" src="imagens/background/005.jpg" >
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;
+            </div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;
+            </div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)">
+            </span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)">
+            </span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contato">
+    <div class="conteudo">
+      <div>
+        <h3>TELEFONES</h3>
+        <p>(22) 38220397</p>
+        <p>(22) 997399835</p>
+        <p>(22) 997399825</p>
+      </div>
+      <div>
+        <h3>NOSSO E-MAIL</h3>
+        <p>oficinadoderly@gmail.com</p>
+      </div>
+      <div>
+        <h3>WHATSAPP</h3>
+        <p>(22) 997399835</p>
+        <p>(22) 997399825</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="destaque" id="servicos">
+    <div class="conteudo">
+      <div>
+        <h3>NOSSOS SERVIÇOS</h3>
+        <p>- Mecânica</p>
+        <p>- Revisão</p>
+        <p>- Scanner Automotivo</p>
+        <p>- Injeção eletrônica</p>
+        <p>- Eletrônica</p>
+        <p>- Suspensão</p>
+      </div>
+      <div>
+        <h3>ONDE ESTAMOS</h3>
+        <p>R. Benedito Nicolau, 258 - Kennedy, Itaperuna - RJ, 28300-000</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="produtor">
+    <p>Oficina Mecânica do Derly | Criado por Lucas Ribeiro</p>
+
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-white";
+  }
+</script>
+
+</body>
+</html>

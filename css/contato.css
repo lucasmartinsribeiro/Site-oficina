@@ -1,0 +1,95 @@
+body{
+  padding-top: 80px;
+}
+.onde h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.contato_formulario{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 50px;
+}
+.contato{
+    display: block;
+    background-color: #fff;
+    color: #000;
+    flex: 1;
+    padding: 0;
+}
+.contato div{
+  display: block;
+}
+.formulario{
+  flex: 1;
+  padding: 20px 0;
+}
+.formulario label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.formulario label.right {
+  text-align: right;
+  display: block;
+}
+.formulario label span{
+  display: block;
+  flex: 0 0 30%;
+}
+
+
+.formulario label textarea,
+.formulario label input{
+  flex: 1;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 #0F0808;
+  width: 100%;
+
+}
+
+.mapa{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.mapa h3{
+  font-size: 30px;
+}
+
+.mapa iframe{
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width:800px) {
+  .contato_formulario{
+    display: block;
+    box-sizing: border-box;
+
+  }
+  .contato_formulario .contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .contato_formulario .contato > div{
+    flex: 0 0 50%;
+    max-width: 100%;
+    border: 0;
+  }
+  .contato_formulario .formulario{
+    display: block;
+  }
+}
+
+
+@media (max-width: 485px){
+  .contato_formulario .contato > div{
+    /* flex: 0 0 50%; */
+    flex-basis: 100%;
+  }
+}
