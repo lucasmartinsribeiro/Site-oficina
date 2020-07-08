@@ -1,0 +1,23 @@
+{
+  "name": "Site-da-oficina",
+  "version": "1.0.0",
+  "description": "Site que eu criei no curso de Web Designer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmartinsribeiro/Site-da-oficina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmartinsribeiro/Site-da-oficina/issues"
+  },
+  "homepage": "https://github.com/lucasmartinsribeiro/Site-da-oficina#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
